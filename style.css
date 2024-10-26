@@ -77,7 +77,7 @@ body {
   color: #f8f8f8;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0 auto;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 .hero p {
@@ -114,7 +114,7 @@ body {
 /* services */
 
 .services {
-  margin: 50px;
+  margin: 100px;
   /* text-align: center; */
 }
 
@@ -125,11 +125,15 @@ body {
 
 .services .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around flex;
+  flex-wrap: wrap;
+  /* background: green; */
 }
 
 .services .cards .card {
   text-align: center;
+  width: 300px;
+  margin: 20px auto;
 }
 
 .services .cards .card img {
@@ -137,6 +141,9 @@ body {
   border-radius: 50%;
 }
 
+.services .cards .card p {
+  width: 300px;
+}
 /* testimonial */
 
 .testimonial {
@@ -161,7 +168,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 15px;
+  /* gap: 10px; */
   margin: 20px 5%;
   /* background-color: green; */
 }
@@ -169,8 +176,8 @@ body {
 .teams .cards .card {
   text-align: center;
   border: 1px solid #fff;
-  width: 250px;
-  margin: 10px 40px;
+  width: 300px;
+  margin: 25px auto;
   background: #fff;
   border-radius: 5px;
 }
@@ -194,10 +201,42 @@ body {
   margin: 0;
 }
 
+.teams .cards .card .description p {
+  margin: 10px;
+}
+.teams .cards .card .description p i {
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+/* contact us */
+
+.contact-us {
+  margin: 75px 0;
+  padding: 100px 0;
+  /* text-align: center; */
+  background-color: #7aa3e6;
+}
+
+.contact-us * {
+  margin: 20px 10%;
+}
+
+.contact-us button {
+  padding: 18px 30px;
+  margin-right: -5px;
+  border: 1px solid #7aa3e6;
+  border-radius: 7px;
+}
+.contact-us i {
+  margin: 0 10px;
+}
+
 /* footer */
 
 footer {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   background: #fff;
@@ -206,18 +245,8 @@ footer {
 footer .col {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 70px auto;
-}
-
-footer .logo {
-  width: 40px;
-  margin: 10px 0;
-}
-
-footer h4 {
-  font-size: 14px;
-  padding-bottom: 5px;
+  align-items: space-around;
+  margin: 40px auto;
 }
 
 footer p {
@@ -225,19 +254,11 @@ footer p {
   margin: 0 0 8px 0;
 }
 
-footer a {
-  font-size: 13px;
-  text-decoration: none;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: #088178;
-}
-
 footer .follow {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: start; */
+  gap: 40px;
 }
 
 footer .follow i {
@@ -250,16 +271,11 @@ footer .follow i:hover {
   color: #088178;
 }
 
-footer .install .row img {
-  border: 1px solid #088178;
-  border-radius: 6px;
-}
-
-footer .install img {
-  margin: 10px 0 15px 0;
-}
-
 footer .copyright {
   width: 100%;
   text-align: center;
+  padding: 20px 0;
+}
+footer .copyright p {
+  font-size: 15px;
 }
