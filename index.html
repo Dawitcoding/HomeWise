@@ -11,74 +11,82 @@
     ></script>
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="home">
       <div class="logo">
-        <img src="./logo.PNG" alt="" />
+        <img src="./images/logo.PNG" alt="" />
         <h1>Home Wise Tutor</h1>
       </div>
       <div class="nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
 
     <div class="hero">
-      <img src="./original.png" alt="" />
+      <img src="./images//original.png" alt="" />
       <h2>ንውልቃዊ ድሌታት ዘማልአ ብ ክኢላታት ዝወሃብ ገዛ ንገዛ ትምህርቲ</h2>
       <p>
-        ሓይሊ ብሕታዊ ትምህርቲ ምስ ውፉያት መምህራንና ርኸቡ። ውላድኩም ብ ኣካዳምያዊ ብቕዓት ብሉጽ ንምግባር ዝተዳለወ ,
-        ሓደ ንሓደ ደገፍ ብምሃብ ብኣካዳሚያዊ ደረጃን ምሉእ ዓቕሞም ክበጽሑን ምዃኖም ይፍለጥ። ዓወቶም ንኽፈት ብሓባር!
+        ፅረት ዝሓለወ ትምህርቲ ብ ውፉያት መምህራንና ይርኸቡ። ውላድኩም ብ ኣካዳምያዊ ብቕዓት ብዘለዎም መማህራን ተሓጊዞም
+        ብሉፃት ኮይኖም ክርከንቡ ንምግባር ዝተዳለወ ፣ ናይ ገዛ ንገዛ ትምህርቲ የመዝግብዎም ።
       </p>
     </div>
 
-    <!-- <div class="about-us">
-      <img src="./dashboard.png" alt="" />
-      <div class="about">
-        <h2>About US</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A explicabo
-          dolore repudiandae?
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
-          inventore! Sequi, doloribus?
-        </p>
+    <!-- about-us -->
+    <section class="about-us" id="about">
+      <div class="title">
+        <h2>ብዛዕባና ዝምልከት</h2>
       </div>
-    </div> -->
-    <div class="services">
+      <div class="container">
+        <div class="about">
+          <h2>እንኻዕ ናብ መርበብ ሓበሬታና ብደሓን መፁ</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eum
+            voluptatum quaerat iure aliquid ab laudantium similique qui sunt
+            mollitia possimus amet corporis soluta excepturi ipsam non, voluptas
+            unde? Laboriosam?
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="about-image">
+          <img src="./images/aboutt.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div class="services" id="service">
       <h2>እንህቦም ግልጋሎት</h2>
       <div class="cards">
         <div class="card">
-          <img src="./homeLogo.png" alt="" />
+          <img src="./images/homeLogo.png" alt="" />
           <h3>ገዛ ን ገዛ ትምህርቲ</h3>
           <p>ብክኢላታት መምህራን ዝተሓገዘ ገዛ ንገዛ ቲምህርቲ</p>
         </div>
         <div class="card">
-          <img src="./exam.png" alt="" />
-          <h3>ተምሃሮ ንፈተና ዝግጁ ምግባር</h3>
-          <p>ተምሃሮ ብ ክልላዊን ብሐራዊን ዝወሃቦም ፈተና ዝጉጁ ምግባር</p>
+          <img src="./images/fetenan.png" alt="" />
+          <h3>ተምሃሮ ንፈተና ድልዋት ምግባር</h3>
+          <p>ተምሃሮ ብ ክልላዊን ብሐራዊን ዝወሃቦም ፈተና ድልዋት ምግባር</p>
         </div>
         <div class="card">
-          <img src="./logo.PNG" alt="" />
+          <img src="./images/collage.png" alt="" />
           <h3>ኣሳይመንት ፕሮጀችት ሓገዝ</h3>
           <p>ን ተምሃሮ ዝወሃብ ኣሳይመንትን ፕሮጀችትን ንክሰርሑ ዘክእል ዓቕሚ ምፍጣር</p>
         </div>
         <div class="card">
-          <img src="./logo.PNG" alt="" />
+          <img src="./images/computer.png" alt="" />
           <h3>መሠረታዊ ናይ ኮምፒውተር ክእለታት</h3>
           <p>ንተማሃሮ ኣገደስቲ፣ ተግባራውን መሰረታውን ክእለት ኮምፒተር ንክህልዎም ምግባር</p>
         </div>
         <div class="card">
-          <img src="./logo.PNG" alt="" />
+          <img src="./images/nttk.png" alt="" />
           <h3>ኔትዎትክ ኢንስታሌሽን</h3>
           <p>ንድርጅታትን ትካላትን ዘተኣማምን፣ ውሑስን ስሉጥን ኔትዎርክ ዝርግሐ</p>
         </div>
         <div class="card">
-          <img src="./logo.PNG" alt="" />
+          <img src="./images/electric (2).png" alt="" />
           <h3>አሌክትሪክ ዝርገሐ</h3>
           <p>ንድርጅታትን ትካላትን ሞያዊ፣ ልክዕን ዘተኣማምንን አሌክትሪክ ዝርገሐ</p>
         </div>
@@ -136,7 +144,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="./1.png" alt="" />
+          <img src="./images/dave.jpg" alt="" />
           <div class="description">
             <h3>ዳዊት ገብረጻዲቅ</h3>
             <p>position</p>
@@ -147,7 +155,7 @@
     </div>
 
     <!-- contact -->
-    <div class="contact-us" style="margin-bottom: 0">
+    <div class="contact-us" style="margin-bottom: 0" id="contact">
       <h2>Contact Us</h2>
 
       <p>
